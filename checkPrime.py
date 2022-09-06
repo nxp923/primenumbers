@@ -1,14 +1,11 @@
 #!/usr/bin/python3
-import pdb
 def check_prime(x):
   if x >= 2:
     fail = False
     for i in range(2, x):
       if x % i == 0:
-        fail = True
+        print("%s is a not prime number" %(x))
         break
-    if fail:
-      print("%s is a not prime number" %(x))
     else:
       print("%s is a prime number" %(x))
   else:
